@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenu" customModule="CCDP" customModuleProvider="target">
+            <connections>
+                <outlet property="btnStack" destination="sWB-7h-eFe" id="lXc-TS-ujL"/>
+                <outlet property="cartView" destination="Lnq-eQ-J8l" id="iqB-ie-7xg"/>
+                <outlet property="icBtn" destination="EWP-Mr-MhR" id="La5-8q-OGD"/>
+                <outlet property="osBtn" destination="wh7-Mr-UAM" id="itZ-v7-l8w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sWB-7h-eFe">
+                    <rect key="frame" x="100" y="0.0" width="275" height="517"/>
+                    <subviews>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PL-8Q-dPQ">
+                            <rect key="frame" x="0.0" y="0.0" width="275" height="57.5"/>
+                            <color key="backgroundColor" red="0.77647058820000003" green="0.0" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="    Sign Off">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hco-e9-b4i">
+                            <rect key="frame" x="0.0" y="57.5" width="275" height="57.5"/>
+                            <color key="backgroundColor" red="0.77647058820000003" green="0.0" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="    Account Summary">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMY-Vw-MFp">
+                            <rect key="frame" x="0.0" y="115" width="275" height="57.5"/>
+                            <color key="backgroundColor" red="0.77647058820000003" green="0.0" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="    Deposit Checks">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5Y-Mf-QRd">
+                            <rect key="frame" x="0.0" y="172.5" width="275" height="57.5"/>
+                            <color key="backgroundColor" red="0.77647058820000003" green="0.0" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="    Transfer &amp; Pay">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWP-Mr-MhR">
+                            <rect key="frame" x="0.0" y="230" width="275" height="57"/>
+                            <color key="backgroundColor" red="0.77647058820000003" green="0.0" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="    Immediate Credit">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="showImmediateCredit:" destination="-1" eventType="touchUpInside" id="GEs-qG-2yo"/>
+                            </connections>
+                        </button>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wh7-Mr-UAM">
+                            <rect key="frame" x="0.0" y="287" width="275" height="57.5"/>
+                            <color key="backgroundColor" red="0.77647058820000003" green="0.0" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="    Other Services">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="showOtherServices:" destination="-1" eventType="touchUpInside" id="T5q-Zk-sOF"/>
+                            </connections>
+                        </button>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajC-jT-Mz5">
+                            <rect key="frame" x="0.0" y="344.5" width="275" height="57.5"/>
+                            <color key="backgroundColor" red="0.77647058820000003" green="0.0" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="    Settings">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UB9-Aj-1OI">
+                            <rect key="frame" x="0.0" y="402" width="275" height="57.5"/>
+                            <color key="backgroundColor" red="0.77647058820000003" green="0.0" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="    More Information">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD5-Yu-blE">
+                            <rect key="frame" x="0.0" y="459.5" width="275" height="57.5"/>
+                            <color key="backgroundColor" red="0.77647058820000003" green="0.0" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="    Privacy, Cookies and Security">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrayCart" translatesAutoresizingMaskIntoConstraints="NO" id="Lnq-eQ-J8l">
+                    <rect key="frame" x="100" y="517" width="275" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="0Me-0e-4zq"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sWB-7h-eFe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="9Wi-KI-dX8"/>
+                <constraint firstItem="sWB-7h-eFe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cgt-Dr-TJc"/>
+                <constraint firstItem="Lnq-eQ-J8l" firstAttribute="top" secondItem="sWB-7h-eFe" secondAttribute="bottom" id="DSy-KV-4JF"/>
+                <constraint firstAttribute="bottom" secondItem="Lnq-eQ-J8l" secondAttribute="bottom" id="GM1-K6-Ohb"/>
+                <constraint firstItem="Lnq-eQ-J8l" firstAttribute="leading" secondItem="sWB-7h-eFe" secondAttribute="leading" id="HTV-FN-3ZG"/>
+                <constraint firstAttribute="trailing" secondItem="sWB-7h-eFe" secondAttribute="trailing" id="QrN-kH-Y2s"/>
+                <constraint firstAttribute="trailing" secondItem="Lnq-eQ-J8l" secondAttribute="trailing" id="Sya-HD-hVD"/>
+            </constraints>
+            <point key="canvasLocation" x="29.5" y="66.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GrayCart" width="1384" height="856"/>
+    </resources>
+</document>
